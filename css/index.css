@@ -1,0 +1,244 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #000000;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  background-color: #71c21b;
+}
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #71c21b;
+  width: 100%;
+  z-index: 1;
+}
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+.subnav:hover .subnav-content {
+  display: block;
+}
+.header {
+  background-color: #ffffff;
+}
+body {
+  background-color: #f0f0f2;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.main {
+  width: 55%;
+  margin: 2em auto;
+  padding: 5em;
+  background-color: #fdfdff;
+  border-radius: 0.5em;
+  box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+}
+@media (max-width: 700px) {
+  div {
+    margin: 0 auto;
+    width: auto;
+  }
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #212121;
+  text-decoration: underline;
+}
+code {
+  background-color: #eee;
+  padding: 20px;
+  display: block;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #414141;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+p {
+  padding: 5px;
+}
+* {
+  box-sizing: border-box;
+}
+.left {
+  background-color: #fdfdff;
+  margin-top: 2em;
+  border-radius: 0.5em;
+  margin-right: 1em;
+  padding: 20px;
+  float: right;
+  width: 20%;
+  box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+}
+.right {
+  background-color: #fdfdff;
+  margin-top: 2em;
+  border-radius: 0.5em;
+  margin-left: 1em;
+  padding: 20px;
+  float: left;
+  width: 20%;
+  box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+}
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left,
+  .main,
+  .right {
+    width: 100%;
+    /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+.toc ol {
+  counter-reset: item;
+  text-decoration: none;
+}
+.toc_li li {
+  display: block;
+  text-decoration: none;
+}
+.toc_li li::before {
+  content: counters(item, ".")". ";
+  counter-increment: item;
+  text-decoration: none;
+}
+.toc a {
+  text-decoration: none;
+  padding: 2px;
+  color: #212121;
+  font-size: 15px;
+}
+.toc a:hover {
+  color: #71c21b;
+}
+.profile {
+  width: 100%;
+}
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: #212121;
+  text-align: center;
+}
+@media only screen and (max-width: 999px) {
+  .left {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  .main {
+    width: 90%;
+    padding: 20px;
+  }
+}
+.logo {
+  width: 100%;
+  height: auto;
+}
+input[type=text] {
+  width: 70%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+input[type="button"] {
+  width: auto;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 13px;
+}
+input[type=button]:hover {
+  background-color: #212121;
+  color: #eeeeee;
+  cursor: pointer;
+}
+.spacer {
+  padding: 30px;
+}
+em {
+  color: #525252;
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 90%;
+  background-color: rgba(0, 0, 0, 5%);
+  border-radius: .25rem;
+  font-style: normal;
+}
+p {
+  line-height: 1.6; word-wrap: 
+  break-word;
+}
+.main a:hover{
+  color: red;
+}
