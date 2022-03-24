@@ -242,3 +242,7 @@ p {
 .main a:hover{
   color: red;
 }
+img {
+    width: 100%;
+}
+	
