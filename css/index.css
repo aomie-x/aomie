@@ -257,6 +257,12 @@ p.ad-text {
     margin-top: -10px;
 }
 .logo {
+<<<<<<< HEAD
     width: 300px !important;
 }
 	
+=======
+    width: 300px;
+}
+	
+>>>>>>> ca601228cb8f556dbf080a2b21d441c584f6e852
